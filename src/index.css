@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Docalya — Design tokens (Tailwind v4 @theme)
+   Palette : blanc cassé · beige · vert naturel
+   ============================================================ */
+@theme {
+  --color-cream: #faf8f3;
+  --color-cream-deep: #f3eee4;
+  --color-beige: #efe9dd;
+  --color-beige-deep: #e6dccb;
+
+  --color-forest: #3f6b4a;
+  --color-green: #4a7c59;
+  --color-green-soft: #6b9b6e;
+  --color-green-bright: #5b9e69;
+  --color-green-wash: #e4efe1;
+  --color-green-wash-deep: #d6e8d3;
+
+  --color-ink: #232320;
+  --color-ink-soft: #4a4a44;
+  --color-ink-muted: #797971;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+
+  --radius-card: 28px;
+  --radius-soft: 24px;
+  --radius-xl: 32px;
+
+  --shadow-soft: 0 1px 2px rgba(35, 35, 32, 0.04),
+    0 8px 24px rgba(35, 35, 32, 0.06);
+  --shadow-float: 0 2px 6px rgba(35, 35, 32, 0.05),
+    0 18px 50px rgba(35, 35, 32, 0.1);
+}
+
+/* ---------- Base ---------- */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "cv11", "ss01";
+  letter-spacing: -0.011em;
+}
+
+/* Accessible focus ring */
+:where(a, button, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-green);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* Respect reduced motion globally */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
