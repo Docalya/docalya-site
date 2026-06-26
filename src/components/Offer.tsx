@@ -7,7 +7,7 @@ const progress = Math.round((SPOTS_TAKEN / SPOTS_TOTAL) * 100);
 
 export default function Offer() {
   return (
-    <section className="px-5 py-12 sm:px-8 sm:py-16">
+    <section className="px-5 py-8 sm:px-8 sm:py-16">
       <motion.div
         variants={fadeUp}
         initial="hidden"

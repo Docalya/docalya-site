@@ -13,7 +13,7 @@ const badges: Badge[] = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-beige/70 bg-cream-deep px-5 py-12 sm:px-8 sm:py-16">
+    <footer className="border-t border-beige/70 bg-cream-deep px-5 py-8 sm:px-8 sm:py-16">
       <div className="mx-auto max-w-7xl">
         <motion.ul
           variants={stagger}

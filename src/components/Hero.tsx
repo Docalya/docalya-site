@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden px-5 pt-12 pb-20 sm:px-8 sm:pt-16 md:pb-28 2xl:max-w-[1400px] 2xl:mx-auto"
+      className="relative overflow-hidden px-5 pt-8 pb-16 sm:px-8 sm:pt-16 md:pb-28 2xl:max-w-[1400px] 2xl:mx-auto"
     >
       <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2 lg:gap-16">
         {/* ---------- Colonne texte ---------- */}

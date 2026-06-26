@@ -4,7 +4,7 @@ import { fadeUp, viewportOnce } from "../lib/motion";
 
 export default function CTA() {
   return (
-    <section className="px-5 py-12 sm:px-8 sm:py-16">
+    <section className="px-5 py-8 sm:px-8 sm:py-16">
       <motion.div
         variants={fadeUp}
         initial="hidden"

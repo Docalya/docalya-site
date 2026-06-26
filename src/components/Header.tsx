@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { APP_URL } from "../config";
 
 export default function Header() {
@@ -11,37 +11,38 @@ export default function Header() {
     >
       <nav
         aria-label="Navigation principale"
-        className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:h-[72px] sm:px-8 2xl:max-w-[1400px]"
+        className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:h-20 sm:px-8 2xl:max-w-[1400px]"
       >
-        {/* Logo + wordmark */}
+        {/* Logo + nom */}
         <a
           href="#top"
-          className="group flex items-center gap-2.5"
-          aria-label="Docalya — accueil"
+          className="group flex shrink-0 items-center gap-2 sm:gap-2.5"
+          aria-label="Docalya - accueil"
         >
           <img
-  src="/logo-docalya.png"
-  alt="Logo Docalya"
-  className="h-11 w-11 rounded-xl object-contain sm:h-12 sm:w-12"
-/>
-          <span className="text-lg font-bold uppercase tracking-[0.3em] text-ink sm:text-2xl">
-          Docalya
+            src="/logo-docalya.png"
+            alt="Logo Docalya"
+            className="h-9 w-9 rounded-xl object-contain sm:h-12 sm:w-12"
+          />
+          <span className="text-sm font-bold uppercase tracking-[0.12em] text-ink sm:text-2xl sm:tracking-[0.3em]">
+            Docalya
           </span>
         </a>
 
         {/* Actions */}
-        <div className="flex items-center gap-2 sm:gap-3">
+        <div className="flex shrink-0 items-center gap-1.5 sm:gap-3">
           <a
             href={APP_URL}
-            className="inline-flex items-center rounded-full px-3 py-2 text-sm font-semibold text-ink-soft transition-colors hover:text-ink sm:px-4"
+            className="inline-flex items-center whitespace-nowrap rounded-full px-2.5 py-2 text-xs font-semibold text-ink-soft transition-colors hover:text-ink sm:px-4 sm:text-sm"
           >
             Se connecter
           </a>
           <a
             href={APP_URL}
-            className="inline-flex items-center justify-center rounded-full bg-green px-4 py-2.5 text-sm font-semibold text-cream shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:bg-forest sm:px-5"
+            className="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-green px-3.5 py-2.5 text-xs font-semibold text-cream shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:bg-forest sm:px-5 sm:text-sm"
           >
-            Demander mon accès
+            <span className="sm:hidden">Mon accès</span>
+            <span className="hidden sm:inline">Demander mon accès</span>
           </a>
         </div>
       </nav>
