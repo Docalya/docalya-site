@@ -33,7 +33,7 @@ export default function Header() {
         <div className="flex items-center gap-2 sm:gap-3">
           <a
             href={APP_URL}
-            className="hidden rounded-full px-4 py-2 text-sm font-semibold text-ink-soft transition-colors hover:text-ink sm:inline-flex"
+            className="inline-flex items-center rounded-full px-3 py-2 text-sm font-semibold text-ink-soft transition-colors hover:text-ink sm:px-4"
           >
             Se connecter
           </a>
